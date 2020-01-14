@@ -55,6 +55,22 @@ navBar[3].textContent = siteContent["nav"]["nav-item-4"];
 navBar[4].textContent = siteContent["nav"]["nav-item-5"];
 navBar[5].textContent = siteContent["nav"]["nav-item-6"];
 
+let Navigation = document.querySelector("nav");
+
+let newLink = document.createElement("a");
+let newLink2 = document.createElement("a");
+
+newLink.textContent = "Sign Up";
+newLink2.textContent = "Location";
+
+Navigation.appendChild(newLink);
+Navigation.prepend(newLink2);
+
+newLink.style.color = "green";
+newLink.style.fontWeight = "bold";
+newLink2.style.color = "green";
+newLink2.style.fontWeight = "bold";
+
 Array.from(navBar).forEach(navBar => {
 	navBar.style.fontWeight = "bold";
 	navBar.style.color = "green";
