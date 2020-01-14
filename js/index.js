@@ -57,6 +57,7 @@ navBar[5].textContent = siteContent["nav"]["nav-item-6"];
 
 Array.from(navBar).forEach(navBar => {
 	navBar.style.fontWeight = "bold";
+	navBar.style.color = "green";
 });
 
 // header
@@ -95,6 +96,6 @@ middleText[6].textContent = siteContent["contact"]["phone"];
 middleText[7].textContent = siteContent["contact"]["email"];
 
 // footer
-middleText[8].textContent = siteContent["footer"]["copyright"]
+middleText[8].textContent = siteContent["footer"]["copyright"];
 
 // siteContent[""][""];
